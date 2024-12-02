@@ -33,9 +33,7 @@ Follow Web Content Accessibility Guidelines (WCAG) 2.1.
 3.3. SEO:
 Use semantic tags for better search engine optimization.
 Metadata for descriptions, keywords, and titles.
-3.4. Security:
-HTTPS protocol for secure browsing.
-CAPTCHA for form submissions to prevent spam.
+
 4. Website Structure
 4.1. Header:
 Logo and navigation bar.
@@ -93,7 +91,3 @@ Week 2: Homepage and navigation development.
 Week 3: Packages and rooms pages implementation.
 Week 4: Spa activities and reservations pages.
 Week 5: Testing, debugging, and final deployment.
-9. Maintenance and Updates
-Regularly update packages and pricing.
-Ensure SEO practices are current.
-Address feedback from user testing for future improvements.
