@@ -1,40 +1,99 @@
-Overview of the Web Development  for Couples Resort
-The Couples Resort project is a responsive, contemporary website created for a high-end resort that provides a range of amenities, such as lodging, dining options, spa treatments, and packages for romantic getaways. The website features an easy-to-use interface, animations, and comprehensive sections that showcase available rooms, packages, and exclusive deals for couples.
+The design guidelines are outlined as follows:
 
-The work done on the website thus far, including the functionality, page design, and implemented interactions, is summarized in this paper.
+1. Project Overview
+1.1. Project Name: Couples Resort Website
+1.2. Purpose:
+To create a visually appealing, responsive, and user-friendly website for Couples Resort.
+Showcase luxury packages, activities, and spa services while facilitating online bookings.
+1.3. Goals:
+Highlight the resort's unique offerings.
+Enhance the user experience with clear navigation and responsive design.
+Drive bookings through effective calls-to-action (CTAs).
+1.4. Audience:
+Couples seeking luxury getaways, adventure packages, or spa retreats.
+2. Functional Requirements
+2.1. Pages:
+Homepage: Overview of the resort, hero image, and key CTAs.
+Packages Page: Detailed descriptions of available packages.
+Rooms Page: Information about room types and features.
+Dining Page: Showcase dining options and sample menus.
+Spa Activities Page: Highlight spa services and adventure activities.
+Reservations Page: Enable users to book their stay.
+2.2. Features:
+Responsive design for mobile, tablet, and desktop views.
+Navigation menu with a collapsible hamburger menu for mobile.
+Online booking form for reservations.
+Integrated Google Maps for location information.
+Links to social media for better engagement.
+3. Non-Functional Requirements
+3.1. Performance:
+Load time should not exceed 3 seconds for the homepage.
+3.2. Accessibility:
+Follow Web Content Accessibility Guidelines (WCAG) 2.1.
+3.3. SEO:
+Use semantic tags for better search engine optimization.
+Metadata for descriptions, keywords, and titles.
+3.4. Security:
+HTTPS protocol for secure browsing.
+CAPTCHA for form submissions to prevent spam.
+4. Website Structure
+4.1. Header:
+Logo and navigation bar.
+Consistent across all pages.
+4.2. Footer:
+Contact information, privacy policy, and social media links.
+4.3. Content Sections:
+Hero Sections: Large banners with headlines and CTAs.
+Content Grids: Grid-based layout for displaying packages, activities, and room details.
+Testimonials (Optional): Customer reviews for credibility.
+5. Design Guidelines
 
-Features Put into Practice
-1. Header and Main Navigation
-Responsive Navigation Bar: To improve accessibility on tiny devices, a hamburger menu tailored for mobile devices was included.
-Logo Integration: To increase brand awareness, the Couples Resort logo is shown at the top.
-Links to key pages such as Home, Rooms, Packages, Dining, Reservations and Spa have been added.
-2. Hero Section Visual Appeal: To introduce the Couples Resort and encourage customers to make a reservation, a hero section including a backdrop image was included.
-Call to Action (CTA): To make reservations easily accessible, a noticeable Book Now button was created.
-3. Display of accommodation Options in the Rooms Section: A variety of accommodation kinds, including Deluxe Rooms, Luxury Suites, and Private Villas, were shown along with the accompanying pictures and information. The cost and amenities of each accommodation option are listed.
-Specific Details: The special amenities of the resort's rooms, like fireplaces, private hot tubs, and breathtaking views of Soyers Lake, are described in the Why Choose Our Rooms section.
-Show/Hide Functionality: A dynamic area where users can expand or compress room information was created using the <details> and <summary> elements.
+Typography:
 
-4. Interactivity and Animations
-Smooth Scroll Effects: To make the website content appear fluid as users scroll down, CSS animations such as fade-in, zoom-in, and slide-in were used.
-Hover Effects: To promote user interaction, add visual elements like hover effects to buttons and images.
-5. Unique Pages for Particular Deals
-Special Page for Valentine's Day: A special page featuring the Valentine's Day Special package, which includes romantic incentives like spa treatments, exclusive meals, and adventure sports like snowshoeing.
-Winter Wonderland: Showcasing unusual wintertime pastimes for couples, such as a tour of snow sculptures, warm fireside gatherings, and snowshoeing excursions.
-Exclusive Packages: A variety of romantic holiday packages for couples have been added, each with special advantages including gourmet dining, private villas, and opulent spa treatments.
+Font Family: 'Sanchez', 'Times New Roman', serif for body and headings.
+Text color: #626262 for general text and #9a2018 for emphasized text (e.g., headings and links).
+Text alignment: Centered for navigation and hero sections; left-aligned for content grids.
+Spacing and Layout:
 
-6. Image Integration & Styling
-Room and Resort photographs: The website included high-quality photographs to highlight the resort's facilities, activities, and gorgeous surroundings.
-Image Styling: Styled photos for the room details section and activities, ensuring they match well with the design and are responsive.
-7. Customer Testimonials: Added a section featuring genuine testimonials from satisfied Couples Resort visitors. This fosters trust among potential tourists.
-8. Footer Section Contact Details: Footer material now includes the resort's address, toll-free phone, and email address, making it easier for guests to contact us.
-Privacy Policy: A link to the privacy policy was added to ensure openness and legal compliance.
+Maintain consistent margins and padding throughout (e.g., 20px spacing for sections).
+Use a 4-column grid layout for responsiveness.
+Outline widths for mobile previews set at 20px solid #333.
+Interactive Elements:
 
+Links: Smooth transitions (all .5s ease-in-out) with hover color effects.
+Buttons: Background changes on hover to ensure a clear visual cue.
 
-9. Regarding Room Services
-Room Service Description: Added full descriptions of the room services available, including private hot tubs, Jacuzzis, fireplaces, and more.
-About the resort: Detailed information about the resort's location, history, and special features.
-10. CSS enhancements.
-unique Animations: I created unique CSS animations to improve the visual attractiveness of the website.
-Responsive Design: Ensured that the website changes smoothly across several screen sizes, particularly for mobile and tablet viewing.
-Style for Details and Summary Sections: CSS added photos to the <summary> and <details> elements, creating a more dynamic and visually attractive experience while picking rooms.
-11. Forms Reservation Form: Added fields for guests to quickly reserve their stay, including name, email, and phone number check-in/check-out dates, and special requests.
+6. Content Outline
+6.1. Homepage:
+Hero banner with a booking CTA.
+Summary of services (e.g., dining, spa, activities).
+6.2. Packages Page:
+Grid layout showcasing packages with images, descriptions, and pricing.
+"Book Now" buttons under each package.
+6.3. Rooms Page:
+Details about room types, features, and photos.
+6.4. Dining Page:
+Overview of dining experiences, sample menus, and dining hours.
+6.5. Spa Activities Page:
+Information about spa services, wellness packages, and adventure activities.
+6.6. Reservations Page:
+Online booking form with fields for contact information, date selection, and package preferences.
+7. Technical Implementation
+7.1. Development Tools:
+HTML5, CSS3, JavaScript.
+Use libraries like FontAwesome for icons.
+7.2. Frameworks:
+Use CSS Grid and Flexbox for layout.
+7.3. Testing:
+Cross-browser testing for compatibility.
+Responsive testing on different devices and resolutions.
+8. Project Timeline
+Week 1: Requirements gathering and wireframing.
+Week 2: Homepage and navigation development.
+Week 3: Packages and rooms pages implementation.
+Week 4: Spa activities and reservations pages.
+Week 5: Testing, debugging, and final deployment.
+9. Maintenance and Updates
+Regularly update packages and pricing.
+Ensure SEO practices are current.
+Address feedback from user testing for future improvements.
