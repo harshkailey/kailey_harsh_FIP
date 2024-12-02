@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+    <link href="css/grid_done.css" rel="stylesheet" type="text/css">
+    <link href="css/main_done.css" rel="stylesheet" type="text/css">
+    <link href="css/reservations.css" rel="stylesheet" type="text/css">
+    <title>Reservations - Couples Resort</title>
+</head>
+<body>
+    <div id="mobile-outline">
+        <h1 class="hidden">Reservations - Couples Resort</h1>
+
+        <!-- Main Nav -->
+        <header class="grid-con" id="main-header">
+            <nav id="main-nav" class="col-span-full">
+                <h2 class="hidden">Main Navigation</h2>
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger">
+                    <img src="images/burger.svg" alt="hamburger menu icon">
+                </label>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Spa Activities</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="logo" class="col-span-full">
+                <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+            </div>
+        </header>
+
+        <!-- Main Hero Section -->
+        <section id="hero" class="grid-con fade-in">
+            <h2 class="hidden">Book Your Stay</h2>
+            <section id="hero-heading-box" class="col-span-full">
+                <h2 class="hero-img-h2">
+                    <span>Couples Resort</span><br> Plan Your Romantic Escape
+                </h2>
+            </section>
+        </section>
+
+        <!-- Reservations Introduction -->
+        <section id="reservations-intro" class="grid-con slide-in">
+            <div class="col-span-full line-separator">
+                <h2 class="cr-red">Reservations Made Easy</h2>
+                <p>Book your stay at Couples Resort with ease. Select your preferred dates, room type, and special packages to create unforgettable memories with your loved one.</p>
+            </div>
+        </section>
+
+        <!-- Reservations Form Section -->
+        <section id="reservations-form" class="grid-con">
+            <h2 class="hidden">Reservation Form</h2>
+            <div class="col-span-full">
+                <form id="reservation-form" class="reservation-form">
+                    <label for="full-name">Full Name</label>
+                    <input id="full-name" type="text" name="full_name" placeholder="Enter your full name" required>
+                    
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+                    
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required>
+                    
+                    <label for="check-in">Check-In Date</label>
+                    <input id="check-in" type="date" name="check_in_date" required>
+                    
+                    <label for="check-out">Check-Out Date</label>
+                    <input id="check-out" type="date" name="check_out_date" required>
+                    
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" name="room_type" required>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="suite">Luxury Suite</option>
+                        <option value="villa">Private Villa</option>
+                    </select>
+                    
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special_requests" placeholder="Enter any special requests here..."></textarea>
+                    
+                    <input type="submit" value="Submit Reservation" class="submit-button">
+                </form>
+            </div>
+        </section>
+
+        <!-- Success Overlay -->
+        <div id="success-overlay">
+            <div class="success-checkmark">&#10004;</div>
+            <p class="success-message">Reservation Submitted Successfully!</p>
+        </div>
+
+        <!-- Footer Section -->
+        <footer id="footer-hero" class="grid-con">
+            <section id="footer-contact-info" class="col-span-full">
+                <h3>Couples Resort</h3>
+                <p>1198 Osprey Rd, (End of)<br>
+                    Minden, Soyers Lake, ON, <br>
+                    K0M 2K0
+                </p>
+                <p>
+                    Toll Free:+1 877 201-1156<br>
+                    FAX:+1 613 638 2217<br>
+                    E-mail: info@coupleresort.com
+                </p>
+            </section>
+            <div id="footer-privacy" class="col-span-full line-separator">
+                <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability, and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Show the success overlay and redirect
+        const form = document.getElementById('reservation-form');
+        const overlay = document.getElementById('success-overlay');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            overlay.classList.add('visible');
+            setTimeout(() => {
+                window.location.href = 'reservations.html'; // Redirect to home page
+            }, 2000); // 3-second delay
+        });
+    </script>
+</body>
+</html>

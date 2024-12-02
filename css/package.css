@@ -1,0 +1,303 @@
+/* --- General Styles --- */
+
+body {
+    font-family: 'Sanchez', 'Times New Roman', serif;
+    color: #626262;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.cr-red {
+    color: #9a2018;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* --- Main Navigation --- */
+#main-nav label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-bottom: 20px;
+}
+
+#main-nav input, #burger-con {
+    display: none;
+}
+
+#main-nav input:checked ~ #burger-con {
+    display: block;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav ul li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #626262;
+}
+
+#main-nav ul li {
+    border-bottom: 1px solid #efefef;
+}
+
+#logo img {
+    max-width: 382px;
+}
+
+/* --- Hero Section --- */
+#hero {
+    background: url('../images/hero-main.jpg') no-repeat center center/cover;
+    height: 200px;
+}
+
+/*  */
+
+.book-now:hover {
+    background-color: rgb(196, 28, 28);
+}
+
+
+/* --- Packages Section --- */
+#package-intro {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#package-intro h2 {
+    color: #9a2018;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#package-intro p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* --- Packages Grid --- */
+#packages {
+    padding: 40px;
+    background-color: #fff;
+    margin-left: -50px;
+}
+
+.package-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+
+    
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+}
+
+.package-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.package-card h3 {
+    font-size: 18px;
+    color: #9a2018;
+    padding: 15px;
+}
+
+.package-card p {
+    font-size: 14px;
+    padding: 0 15px 15px;
+}
+
+.package-card strong {
+    font-size: 16px;
+    display: block;
+    padding: 0 15px 15px;
+}
+
+.book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    transition:all 0.3s ease;
+    cursor: pointer;
+ }
+
+.book-now:hover {
+    background-color: rgb(196, 28, 28);
+}
+
+/* --- Why Choose Us Section --- */
+#why-choose-us {
+    background-color: #efefef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#why-choose-us h2 {
+    font-size: 24px;
+    color: #9a2018;
+    margin-bottom: 20px;
+}
+
+#why-choose-us .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#why-choose-us .grid div {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+#why-choose-us .grid div h3 {
+    font-size: 18px;
+    color: #9a2018;
+}
+
+#why-choose-us .grid div p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #626262;
+}
+
+/* --- Testimonials Section --- */
+#testimonials {
+    padding: 30px 20px;
+    background-color: #f4f4f4;
+}
+
+#testimonials h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #9a2018;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    #why-choose-us .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .package-card {
+        margin: 20px 0;
+    }
+
+    #testimonials .testimonial {
+        font-size: 14px;
+    }
+}
+
+/*  */
+
+/* --- Explore Our Activities Section --- */
+
+#activities {
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Light background to distinguish the section */
+    text-align: center;
+}
+
+#activities h2 {
+    font-size: 24px;
+    color: #9a2018;
+    margin-bottom: 20px;
+}
+
+#activities .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#activities .grid div {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a card-like effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+#activities .grid div:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+#activities .grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
+    border-radius: 8px; /* Matches the card's rounded corners */
+    margin-bottom: 15px;
+}
+
+#activities .grid h3 {
+    font-size: 18px;
+    color: #9a2018;
+    margin-bottom: 10px;
+}
+
+#activities .grid p {
+    font-size: 14px;
+    color: #626262;
+    line-height: 1.5;
+}
